@@ -1,0 +1,18 @@
+#Dev Environment
+#debug=true
+server:
+  port: 8087
+app:
+  message:Esse arquivo de configuracao  ${spring.application.name} especifico para DEV Environment
+
+# Datasource
+spring:
+  h2:
+    console:
+      enabled: true
+      path: /h2
+  datasource:
+    url: jdbc:h2:mem:db;DB_CLOSE_DELAY=-1
+    username: sa
+    password:
+    driver-class-name: org.h2.Driver
